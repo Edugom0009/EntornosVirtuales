@@ -13,10 +13,10 @@ document.body.appendChild( renderer.domElement );
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
-const ambientLight = new THREE.AmbientLight(0x404040, 3)
+const ambientLight = new THREE.AmbientLight(0x404040, 30)
 
 
-const spotLight = new THREE.SpotLight(0xffffff, 100)
+const spotLight = new THREE.SpotLight(0xffffff, 50)
 spotLight.position.set(0, 4, 0)
 scene.add(spotLight)
 
